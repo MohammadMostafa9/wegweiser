@@ -28,20 +28,20 @@
 
 @keyframes slideshow {
     0% {
-        background-image: url(img/1.jpg);
+        background-image: url(/img/1.jpg);
         transform: scale(1.1);
     }
     25% {
-        background-image: url(img/1.jpg);
+        background-image: url(/img/1.jpg);
         transform: scale(1);
     }
  
     75% {
-        background-image: url(img/2.jpg);
+        background-image: url(/img/2.jpg);
         transform: scale(1.1);
     }
     100% {
-        background-image: url(img/2.jpg);
+        background-image: url(/img/2.jpg);
         transform: scale(1);
     }
 }
