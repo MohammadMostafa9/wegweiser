@@ -114,8 +114,21 @@
   .tabs-box .tab:focus{
     background-color: var(--g-color);
   }
-  @media(max-width:1000px){
-    .bar{
+  @media(max-width:800px){
+   .website{
+    display: grid;
+    width: 90vw;
+    height: 100vh;
+    grid:
+    "header" 10%
+    "m-bar" 10%
+    "main" 50%
+    "footer" 8%
+    /1fr; 
+    
+}
+	  
+.bar{
       width: 100%;
     }
     .icon:first-child {
