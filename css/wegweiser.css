@@ -114,39 +114,7 @@
   .tabs-box .tab:focus{
     background-color: var(--g-color);
   }
-  @media(max-width:800px){
-   .website{
-    display: grid;
-    width: 90vw;
-    height: 100vh;
-    grid:
-    "header" 10%
-    "m-bar" 10%
-    "main" 50%
-    "footer" 8%
-    /1fr; 
-    
-}
-	  
-.bar{
-      width: 100%;
-    }
-    .icon:first-child {
-      left: 0;
-      background: linear-gradient(90deg, var(--main-color) 30%, transparent);
-    }
-    .icon:last-child {
-      right: 0;
-      justify-content: flex-end;
-      background: linear-gradient(-90deg, var(--main-color) 30%, transparent);
-    }
-    .tabs-box .tab {
-      font-size: 1.11rem;
-    }
-    .wrapper .tabs-box{
-      gap: 6px;
-    }
-  }
+  
 /* maps */
 .main section {
   height: 100%;
@@ -173,7 +141,6 @@
 .main section .maps {
   height: 80%;
   width: fit-content;
-  overflow: hidden;
   position: relative; 
   animation: maps 400ms ease-out 0s 1 normal both;
 }
@@ -214,3 +181,25 @@
   transition: background-color 200ms ease-in, color 200ms ease-in;
   cursor: not-allowed;
 }
+@media(max-width:800px){
+.main section .maps {
+  height: fit-content;
+.bar{
+      width: 100%;
+    }
+    .icon:first-child {
+      left: 0;
+      background: linear-gradient(90deg, var(--main-color) 30%, transparent);
+    }
+    .icon:last-child {
+      right: 0;
+      justify-content: flex-end;
+      background: linear-gradient(-90deg, var(--main-color) 30%, transparent);
+    }
+    .tabs-box .tab {
+      font-size: 1.11rem;
+    }
+    .wrapper .tabs-box{
+      gap: 6px;
+    }
+  }
