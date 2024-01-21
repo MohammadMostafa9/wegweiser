@@ -17,20 +17,20 @@
 
 @keyframes slideshow {
     0% {
-        background-image: url(/wegweiser/img/background1.jpg);
+        background-image: url(/wegweiser/img/1.jpg);
         transform: scale(1.1);
     }
     25% {
-        background-image: url(/wegweiser/img/background1.jpg);
+        background-image: url(/wegweiser/img/1.jpg);
         transform: scale(1);
     }
  
     75% {
-        background-image: url(/wegweiser/img/background2.jpg);
+        background-image: url(/wegweiser/img/2.jpg);
         transform: scale(1.1);
     }
     100% {
-        background-image: url(/wegweiser/img/background2.jpg);
+        background-image: url(/wegweiser/img/2.jpg);
         transform: scale(1);
     }
 }
