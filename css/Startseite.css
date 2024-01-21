@@ -1,3 +1,40 @@
+/* Slideshow */
+.slideshow-container {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: -3;
+    overflow: hidden;
+}
+
+.slide {
+    width: 100%;
+    height: 100%;
+    animation: slideshow 15s ease infinite;
+    background-size: cover;
+    background-position: center;
+}
+
+@keyframes slideshow {
+    0% {
+        background-image: url(/wegweiser/img/background1.jpg);
+        transform: scale(1.1);
+    }
+    25% {
+        background-image: url(/wegweiser/img/background1.jpg);
+        transform: scale(1);
+    }
+ 
+    75% {
+        background-image: url(/wegweiser/img/background2.jpg);
+        transform: scale(1.1);
+    }
+    100% {
+        background-image: url(/wegweiser/img/background2.jpg);
+        transform: scale(1);
+    }
+}
+
 /* SEITEGRID */
 .Wegweiser-HTW{
     display: flex;
@@ -13,57 +50,29 @@
     "main" 74%
     "footer"8%
     /1fr;
+    
 }
-/* slideshow */
-.Wegweiser-HTW .slideshow {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    animation: slideshow 15s ease infinite;
-    background-size: cover;
-    background-position: center;
-    filter: blur(1px);
-}
-
-@keyframes slideshow {
-    0% {
-        background-image: url(/wegweiser/img/1.jpg);
-        transform: scale(1.1);
-    }
-    25% {
-        background-image: url(/wegweiser/img/1.jpg);
-        transform: scale(1);
-    }
- 
-    75% {
-        background-image: url(/wegweiser/img/2.jpg);
-        transform: scale(1.1);
-    }
-    100% {
-        background-image: url(/wegweiser/img/2.jpg);
-        transform: scale(1);
-    }
-}
-
 /* app */
 .m-bar{
     grid-area: b-main;
 }
 .main{
     grid-area: main;
+    overflow:hidden
 }
 .Wegweiser-HTW {
     background-position: center;
     background-size: cover;  
+    ;
 }
 
 .inhalt {
+    overflow:hidden;
     display: flex;
     flex-direction: column;
     margin-left: var(--x-left-right);
     height: 100%;
-    width: 40%;
+    width: 60%;
     justify-content: center;
     gap: 20px;
     color: var(--sec-color);
@@ -72,6 +81,7 @@
     transform: translateX(-100%); 
     animation: slideInFromLeft 1s ease-in-out forwards; 
 }
+
 
 @keyframes slideInFromLeft {
     0% {
@@ -96,6 +106,7 @@
     padding: 7.5px;
     border-radius: 25px;
     font-size: medium;
+    
 }
 .inhalt h2 {
     font-size: 40px;
@@ -108,22 +119,9 @@
     background-size: 280% auto;
 }
 
-@media (max-width: 1000px) {
-    .inhalt {
-        width: 70%;
-        margin-left: var(--m-left-right);
-    }
-    .inhalt h2 {
-        font-size: xx-large;
-    }
-    .inhalt p {
-        font-size: 19px;
-    }
-}
-
 @media (max-width: 500px) {
     .inhalt {
-        width: 70%;
+        width: 90%;
         margin-left: 10px;
     }
     .inhalt h2 {

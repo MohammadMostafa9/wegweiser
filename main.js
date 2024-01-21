@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
     arrowIcons.forEach((icon) => {
         icon.addEventListener("click", () => {
             let scrollWidth = (containerElement.scrollLeft +=
-                icon.id === "left" ? -340 : 340);
+                icon.id === "left" ? -150 : 100);
             handleIcons(scrollWidth);
         });
     });
@@ -80,6 +80,7 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
     });
+    
 });
 //
 
